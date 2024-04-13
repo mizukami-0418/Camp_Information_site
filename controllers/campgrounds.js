@@ -33,7 +33,7 @@ module.exports.showCampground = async (req, res) => {
 };
 
 module.exports.createCampground = async (req, res) => {
-  const geoData = geocorder
+  const geoData = await geocorder
     .forwardGeocode({
       query: req.body.campground.location,
       limit: 1,
