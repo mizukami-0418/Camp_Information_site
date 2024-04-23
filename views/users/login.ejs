@@ -1,27 +1,46 @@
 <% layout('layouts/boilerplate') %>
-<h1>ログイン</h1>
-<form action="/login" method="POST" class="validate-form" novalidate>
-  <div class="mb-3">
-    <label class="form-label" for="username">ユーザー名</label>
-    <input
-      class="form-control"
-      type="text"
-      name="username"
-      id="username"
-      required
-    />
-    <div class="valid-feedback">OK牧場!!!!!!!</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+      <div class="card shadow">
+        <img
+          src="https://res.cloudinary.com/dkb2xa9zg/image/upload/v1712234520/samples/landscapes/nature-mountains.jpg"
+          alt=""
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">ログイン</h5>
+          <form action="/login" method="POST" class="validate-form" novalidate>
+            <div class="mb-3">
+              <label class="form-label" for="username">ユーザー名</label>
+              <input
+                class="form-control"
+                type="text"
+                name="username"
+                id="username"
+                autofocus
+                required
+              />
+              <div class="valid-feedback">OK牧場!!!!!!!</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="password">パスワード</label>
+              <input
+                class="form-control"
+                type="password"
+                name="password"
+                id="password"
+                required
+              />
+              <div class="valid-feedback">OK牧場!!!!!!!</div>
+            </div>
+            <div class="d-grid">
+              <button class="btn btn-success mt-4">YelpCampにログイン</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="mb-3">
-    <label class="form-label" for="password">パスワード</label>
-    <input
-      class="form-control"
-      type="password"
-      name="password"
-      id="password"
-      required
-    />
-    <div class="valid-feedback">OK牧場!!!!!!!</div>
-  </div>
-  <button class="btn btn-success">YelpCampにログイン</button>
-</form>
+</div>
