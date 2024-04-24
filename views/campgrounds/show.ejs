@@ -1,7 +1,7 @@
 <% layout('layouts/boilerplate') %>
 <link rel="stylesheet" href="/stylesheets/stars.css" />
 <div class="row">
-  <div class="col-6">
+  <div class="col-6 col-sm-12">
     <div id="campgroundCarousel" class="carousel slide">
       <div class="carousel-inner">
         <% campground.images.forEach((img, i) => { %>
@@ -62,7 +62,7 @@
       </div>
     </div>
   </div>
-  <div class="col-6">
+  <div class="col-6 col-sm-12">
     <div id="map"></div>
     <% if(currentUser) { %>
     <h2>レビュー</h2>
